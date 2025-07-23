@@ -1,86 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Vahid Shooshtari's Home Page</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vahid Shooshtari – Engineer & Developer</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <style>
+    body, h1, h2, h3, h4, h5 { font-family: "Roboto", sans-serif; }
+    .w3-navbar { letter-spacing: 1px; }
+    .gallery-img { width:100%; cursor: pointer; transition: 0.3s; }
+    .gallery-img:hover { opacity: 0.8; }
+  </style>
 </head>
 <body>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <img class="w3-image" src="head_image.jpg" alt="Me" width="1500" height="600">
-  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">VAHID SHOOSHTARI</h1>
-    <h5 class="w3-hide-large" style="white-space:nowrap">VAHID SHOOSHTARI</h5>
-    <h3 class="w3-hide-medium w3-hide-small">ENGINEER & DEVELOPER</h3>
-  </div>
-  
-  <!-- Navbar (placed at the bottom of the header image) -->
-  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    <a href="pages/my_resume.html" class="w3-bar-item w3-button">Resume</a>
-    <a href="pages/videos.html" class="w3-bar-item w3-button">Videos</a>
-    <a href="pages/books.html" class="w3-bar-item w3-button">Books</a>
-    <a href="pages/gallery.html" class="w3-bar-item w3-button">Gallery</a>
-    <a href="pages/about.html" class="w3-bar-item w3-button">About</a>
-  </div>
-</header>
-
-<!-- Navbar on small screens -->
-<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-<div class="w3-bar w3-light-grey">
-  <a href="#" class="w3-bar-item w3-button">Home</a>
-  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-</div>
-</div>
-<!-- Page content -->
-<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
-
-  <!-- Images (Portfolio) -->
-  <img src="second_homepage.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
-  <img src="3rd_homepage.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="4th_homepage.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="5th_homepage.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="6th_homepage.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="7th_homepage.jpg" alt="7th" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="8th_homepage.png" alt="8th" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="9th_homepage.png" alt="9th" class="w3-image w3-margin-top" width="1000" height="500">
-
-  <!-- Contact -->
-  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
-    <h3 class="w3-center">Contact</h3>
-    <hr>
-    <p>Mashhad/IRAN <br>
-         I live in Mashhad, my phone number is : +989153028025 <br>
-         also with that I am on Telegram and so on. <br>
-         Thank you very much. ;-)</p>
-
-    <form action="https://www.w3schools.com/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" required name="Name" disabled="disabeled" />
+  <!-- Top Navigation Bar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-large w3-card w3-padding">
+      <a href="#" class="w3-bar-item w3-button w3-wide">VAHID SHOOSHTARI</a>
+      <div class="w3-right w3-hide-small">
+        <a href="#about"      class="w3-bar-item w3-button">About</a>
+        <a href="#experience" class="w3-bar-item w3-button">Experience</a>
+        <a href="#portfolio"  class="w3-bar-item w3-button">Portfolio</a>
+        <a href="#personal"   class="w3-bar-item w3-button">Personal</a>
+        <a href="#contact"    class="w3-bar-item w3-button">Contact</a>
+        <a href="pages/my_resume.pdf" class="w3-bar-item w3-button">Resume</a>
       </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" required name="Email" disabled="disabeled" />
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" required name="Message" disabled="disabeled" />
-      </div>
-      <button type="submit" class="w3-button w3-block w3-dark-grey" disabled="disabeled">Send</button>
-    </form><br>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-
+    </div>
   </div>
 
-<!-- End page content -->
-</div>
+  <!-- Hero Section -->
+  <header class="w3-display-container w3-content w3-center" style="max-width:1400px; margin-top:52px;">
+    <img src="head_image.jpg" alt="Hero Image" style="width:100%; max-height:450px; object-fit:cover;">
+    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey">
+      <h1 class="w3-hide-small">VAHID SHOOSHTARI</h1>
+      <h3>Engineer & Developer</h3>
+    </div>
+  </header>
 
-</body>
-</html>
+  <!-- About Section -->
+  <section id="about" class="w3-content w3-padding-64">
+    <h2 class="w3-center">About Me</h2>
+    <p class="w3-center w3-large">Mashhad, Iran – Full-Stack Developer</p>
+    <div class="w3-row-padding w3-center w3-margin-top">
+      <div class="w3-quarter">
+        <i class="w3-xxxlarge w3-text-indigo">💻</i>
+        <h4>Web Development</h4>
+        <p>HTML, CSS, JavaScript, React, W3.CSS</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="w3-xxxlarge w3-text-green">🔧</i>
+        <h4>Backend</h4>
+        <p>Node.js, Express, PHP, MySQL, MongoDB</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="w3-xxxlarge w3-text-orange">📱</i>
+        <h4>Mobile Apps</h4>
+        <p>Flutter, React Native</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="w3-xxxlarge w3-text-red">🛠️</i>
+        <h4>DevOps</h4>
+        <p>Docker, CI/CD, AWS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="w3-light-grey w3-content w3-padding-64">
+    <h2 class="w3-center">Professional Experience</h2>
+    <div class="w3-row-padding w3-margin-top">
+      <!-- Example Experience Card -->
+      <div class="w3-col l6 m12 w3-margin-bottom">
+        <div class="w3-card-4 w3-white w3-hover-shadow">
+          <img src="project1_screenshot.jpg" alt="Inventory Management" style="width:100%; object-fit:cover; max-height:180px;">
+          <div class="w3-container">
+            <h4>Inventory Management System</h4>
+            <p>Full-stack app with React, Node.js & MongoDB. Real-time updates & role-based access.</p>
+            <p><strong>Jan 2022 – Jun 2022</strong></p>
+            <a href="https://github.com/vshooshtari/"
+               class="w3-button w3-indigo w3-block" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards here… -->
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="w3-content w3-padding-64">
+    <h2 class="w3-center">Portfolio & Projects</h2>
+    <p class="w3-center w3-large">Click thumbnails to view full-size</p>
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="work_1.jpg" alt="Homepage Design" class="gallery-img">
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="work_2.jpg" alt="Dashboard UI" class="gallery-img">
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="work_3.jpg" alt="E-commerce Site" class="gallery-img">
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="work_4.jpg" alt="Analytics Platform" class="gallery-img">
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="work_5.jpg" alt="Mobile App Preview" class="gallery-img">
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="work_6.jpg" alt="Mobile App Preview" class="gallery-img">
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="work_7.jpg" alt="Mobile App Preview" class="gallery-img">
+      </div>      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="work_8.jpg" alt="Mobile App Preview" class="gallery-img">
+      </div>      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="work_9.jpg" alt="Mobile App Preview" class="gallery-img">
+      </div>            
+      <!-- Add more project images as needed -->
+    </div>
+  </section>
+
+  <!-- Personal Pictures Section -->
+  <section id="personal" class="w3-light-grey w3-content w3-padding-64">
+    <h2 class="w3-center">Personal Pictures</h2>
+    <p class="w3-center w3-large">A few moments from my life</p>
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="pers_0.jpg" alt="Personal Pic 1" class="gallery-img">
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="pers_1.jpg" alt="Personal Pic 2" class="gallery-img">
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="pers_2.jpg" alt="Personal Pic 3" class="gallery-img">
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="pers_3.jpg" alt="Personal Pic 3" class="gallery-img">
+      </div>      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="pers_4.jpg" alt="Personal Pic 3" class="gallery-img">
+      </div>      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="pers_5.jpg" alt="Personal Pic 3" class="gallery-img">
+      </div>      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="pers_6.jpg" alt="Personal Pic 3" class="gallery-img">
+      </div>      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="pers_7.jpg" alt="Personal Pic 3" class="gallery-img">
+      </div>      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="pers_8.jpg" alt="Personal Pic 3" class="gallery-img">
+      </div>      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="pers_9.jpg" alt="Personal Pic 3" class="gallery-img">
+      </div>      <div class="w3-col l4 m6 w3-margin-bottom">
+        <img src="pers_10.jpg" alt="Personal Pic 3" class="gallery-img">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="w3-padding-64 w3-content">
+    <h2 class="w3-center">Contact Me</h2>
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-col l6 m12">
+        <p><i class="w3-large">📍</i> Mashhad, Iran</p>
+        <p><i class="w3-large">📱</i> +98 915 302 8025</p>
+        <p><i class="w3-large">✉️</i> vshooshtari1@gmail.com</p>
+        <p><i class="w3-large">✉️</i> vshooshtari@yahoo.com</p>
+      </div>
+      <div class="w3-col l6 m12">
+        <form action="https://www.w3schools.com/action_page.php" target="_blank">
+          <div class="w3-section">
+            <labe
